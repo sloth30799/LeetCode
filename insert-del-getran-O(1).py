@@ -26,6 +26,7 @@
 # randomizedSet.getRandom(); // Since 2 is the only number in the set, getRandom() will always return 2.
 
 from random import choice
+from random import choice
 
 
 class RandomizedSet:
@@ -48,3 +49,10 @@ class RandomizedSet:
 
     def getRandom(self) -> int:
         return choice(list(self.items.keys()))
+
+
+# Your RandomizedSet object will be instantiated and called as such:
+# obj = RandomizedSet()
+# param_1 = obj.insert(val)
+# param_2 = obj.remove(val)
+# param_3 = obj.getRandom()
